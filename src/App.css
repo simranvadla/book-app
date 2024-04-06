@@ -1,38 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.search-bar {
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-bar input {
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.search-bar button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.books-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.book {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.book img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.book h2 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.book p {
+  color: #666;
+}
+
+.book-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+}
+
+.banner img {
+  width: 200px;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.details {
+  text-align: left;
+}
+
+.description {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.description h3 {
+  margin-bottom: 10px;
+}
+
+.description p {
+  color: #666;
 }
